@@ -41,10 +41,10 @@ var LovePoint = function (drawUi, matching) {
 
     };
     this.runLoveMatch = () => {
-        drawUi.showLoadingBar();
-        console.log('modal Loaded complete!!!');
+        drawUi.showLoadingBar();        
         that.predict();
         drawUi.hideLoadingBar();
+        $("#btnRunLovePoint").prop("disabled", true);
     }
 
     this.readUrl = function(input, genderType) {
@@ -116,14 +116,14 @@ var LovePoint = function (drawUi, matching) {
         let explainFormat = "<div class=\"humanType-explain pt-2\">{description}</div>";
         explainFormat.replace("{description}", bodyDescriptions);
 
-        let celebrationFormat = "<div class=\"{humanTypeStyle}-celeb pt-2 pb-2\">{genderCode} {title} 연예인: {celebrities}</div>";
+        let celebrationFormat = "<div class=\"{humanTypeStyle}-celeb pt-2 pb-2\">{title} {genderCode} 연예인: {celebrities}</div>";
         ;
                          
         return  titleFormat.replace("{humanTypeStyle}", humanTypeStyle)
                            .replace("{title}", humanType.title) + 
                 explainFormat.replace("{description}", bodyDescriptions) + 
                 celebrationFormat.replace("{humanTypeStyle}", humanTypeStyle)
-                                 .replace("{genderCode}", genderCode === "F" ? "여성" : "남성")
+                                 .replace("{genderCode}", genderCode === "F" ? "여" : "남")
                                  .replace("{title}", humanType.title)
                                  .replace("{celebrities}", celebrities);    
     }
