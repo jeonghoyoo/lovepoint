@@ -45,9 +45,15 @@ var DrawUI = function () {
     }
 
     this.drawResult = (matchingResult) => {
+        that.clearResultArea();
         $('.result-message').html(that.createResultElement(matchingResult));
         $("#label-container").append(that.createPointBar(matchingResult));
         that.displayResultMessageArea();
+    }
+
+    this.clearResultArea = () => {
+        $('.result-message').html("");
+        $("#label-container").html("");
     }
 
     this.createResultElement = (matchingResult) => {

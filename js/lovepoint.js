@@ -44,8 +44,6 @@ var LovePoint = function (drawUi, matching) {
         gtag('event', '궁합보기 click', {'event_category': '궁합보기 클릭','event_label': '중간 버튼'});
         drawUi.showLoadingBar();        
         that.predict();
-        drawUi.hideLoadingBar();
-        $("#btnRunLovePoint").prop("disabled", true);
     }
 
     this.readUrl = function(input, genderType) {
@@ -94,6 +92,7 @@ var LovePoint = function (drawUi, matching) {
         malePredictions.sort((a, b) => parseFloat(b.probability) - parseFloat(a.probability));
         const matchingResult = matching.calculateLoveResult(femalePredictions, malePredictions);
         drawUi.drawResult(matchingResult);
+        drawUi.hideLoadingBar();
     }
 
     this.removeUpload = function() {
