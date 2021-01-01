@@ -8,4 +8,6 @@
 ### github PR push
 - git add . : 작업 디렉토리 상의 변경 내용을 스테이징 영역에 추가
 - git commit -m "message" : 변경 내용을 commit 한다. /w message
-- git push -u origin [branchName] : 원하는 branch에 Push
+- git push -u origin [main <- branchName>] : 원하는 branch에 Push
+
+### kakao adfir 3EA 연동

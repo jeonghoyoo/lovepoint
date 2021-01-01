@@ -68,12 +68,11 @@ var DrawUI = function () {
         let titleFormat = "<div class=\"{humanTypeStyle}-title\">{title}</div>";
         let resultTitle = "남성 : {maleType} / 여성 : {femaleType}";        
 
-        let explainFormat = "<div class=\"humanType-explain pt-2\">{description}</div>";
+        let explainFormat = "<div class=\"humanType-explanation pt-2\">{description}</div>";
 
         let femaleCelebrityFormat = "<div class=\"{humanTypeStyle}-celeb mt-2 text-align: left\">{genderCode} {title} 연예인: {celebrities}</div>";
         let maleCelebrityFormat = "<div class=\"{humanTypeStyle}-celeb mb-2 text-align: left\">{genderCode} {title} 연예인: {celebrities}</div>";
 
-        //only male
         let maleResultTitle = "남성 : {maleType}";
         $('.male-file-upload-content').append(titleFormat.replace("{humanTypeStyle}", "male" + maleHumanType.no)
                                                          .replace("{title}", maleResultTitle.replace("{maleType}", maleHumanType.title)));
