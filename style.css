@@ -5,7 +5,7 @@ body {
   color: #35465d;
 }
 .file-upload {
-    padding: 15% 3%;
+    padding: 2% 3% 5%;
     margin: 0 auto;
     border-radius: 10px;
     border: solid 1.5px #f6f7fa;
@@ -143,10 +143,10 @@ body {
 
 .try-again-text {
   display: block;
-  font-size: 1.5rem;
+  font-size: 3rem;
   text-align: center;
   color: #ffffff;
-  padding: 4px 15px;
+  padding: 2px 7px;
 }
 
 .run-love-btn {
@@ -350,68 +350,76 @@ body {
 }
 .male1-title {
     color: #3ba363;
+    font-size:2em;
 }
 .male1-celeb {
     color: #3ba363;
-    font-size: 1.2rem;
-    text-align:left;
+    font-size: 1.3em;
+    text-align:center;
 }
 .male2-title {
     color: #3ba363;
+    font-size:2em;
 }
 .male2-celeb {
     color: #3ba363;
-    font-size: 1.2rem;
-    text-align:left;
+    font-size: 1.3em;
+    text-align:center;
 }
 .male3-title {
   color: #548dd4;
+  font-size:2em;
 }
 .male3-celeb {
   color: #548dd4;
-  font-size: 1.2rem;
-  text-align:left;
+  font-size: 1.3em;
+  text-align:center;
 }
 .male4-title {
   color: #9b6b43;
+  font-size:2em;
 }
 .male4-celeb {
   color: #9b6b43;
-  font-size: 1.2rem;
-  text-align: left;
+  font-size: 1.3em;
+  text-align:center;
 }
 
 .female1-title {
     color: #ff6c0a;
+    font-size: 2em;
 }
 .female1-celeb {
     color: #ff6c0a;
-    font-size: 1.2rem;
-    text-align:left;
+    font-size: 1.3em;
+    text-align:center;
 }
 .female2-title {
     color: #e56995;
+    font-size: 2em;
 }
 .female2-celeb {
     color: #e56995;
-    font-size: 1.2rem;
-    text-align:left;
+    font-size: 1.3em;
+    text-align:center;
 }
 .female3-title {
     color: #31849b;
+    font-size: 2em;
 }
 .female3-celeb {
     color: #31849b;
-    font-size: 1.2rem;
-    text-align:left;
+    font-size: 1.3em;
+    text-align:center;
 }
 .female4-title {
   color: #52349b;
+  font-size: 2em;
 }
 .female4-celeb {
   color: #52349b;
-  font-size: 1.2rem;
-  text-align: left;
+  font-size: 1.3em;
+  text-align:center;
 }
 
 label {
