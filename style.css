@@ -344,7 +344,7 @@ body {
 }
 
 
-.humanType-explain {
+.humanType-explanation {
     font-size: 1.5rem;
     text-align: left;
 }
@@ -505,4 +505,13 @@ input:checked + label > .knob > i:before {
 /* gender */
 input#genderCheckbox {
 display: none;
+}
+
+.ad-banner {
+    width: 320px;
+    margin : 0 auto
+}
+
+.kakao-share-explanation {
+  font-size: 1.5rem;
 }
