@@ -37,6 +37,11 @@ var LovePoint = function (drawUi, matching) {
 
         $("#btnRunLovePoint").click(() => {
             that.runLoveMatch();
+            $(".run-button-area").hide();
+        });
+
+        $("#kakaoShareBtn").click(() => {
+            alert("share Button click!!");
         });
 
     };

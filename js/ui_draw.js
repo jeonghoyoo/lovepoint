@@ -72,19 +72,29 @@ var DrawUI = function () {
 
         let femaleCelebrityFormat = "<div class=\"{humanTypeStyle}-celeb mt-2 text-align: left\">{genderCode} {title} 연예인: {celebrities}</div>";
         let maleCelebrityFormat = "<div class=\"{humanTypeStyle}-celeb mb-2 text-align: left\">{genderCode} {title} 연예인: {celebrities}</div>";
+
+        //only male
+        let maleResultTitle = "남성 : {maleType}";
+        $('.male-file-upload-content').append(titleFormat.replace("{humanTypeStyle}", "male" + maleHumanType.no)
+                                                         .replace("{title}", maleResultTitle.replace("{maleType}", maleHumanType.title)));
                          
-        return  titleFormat.replace("{humanTypeStyle}", "female" + femaleHumanType.no)
-                           .replace("{title}", resultTitle.replace("{maleType}", maleHumanType.title)
-                                                          .replace("{femaleType}", femaleHumanType.title)) + 
-                explainFormat.replace("{description}", bodyDescriptions) + 
-                femaleCelebrityFormat.replace("{humanTypeStyle}", "female" + femaleHumanType.no)
-                                 .replace("{genderCode}", "여성")
-                                 .replace("{title}", femaleHumanType.title)
-                                 .replace("{celebrities}", femaleHumanType.female) + 
-                maleCelebrityFormat.replace("{humanTypeStyle}", "male" + maleHumanType.no)
-                                .replace("{genderCode}", "남성")
-                                .replace("{title}", maleHumanType.title)
-                                .replace("{celebrities}", maleHumanType.male);    
+        $('.male-file-upload-content').append(maleCelebrityFormat.replace("{humanTypeStyle}", "male" + maleHumanType.no)
+                                                                 .replace("{genderCode}", "남성")
+                                                                 .replace("{title}", maleHumanType.title)
+                                                                 .replace("{celebrities}", maleHumanType.male));
+
+        let femaleResultTitle = "여성 : {femaleType}";
+        $('.female-file-upload-content').append(titleFormat.replace("{humanTypeStyle}", "female" + femaleHumanType.no)
+                                                         .replace("{title}", femaleResultTitle.replace("{femaleType}", femaleHumanType.title)));
+                         
+        $('.female-file-upload-content').append(femaleCelebrityFormat.replace("{humanTypeStyle}", "female" + femaleHumanType.no)
+                                                                     .replace("{genderCode}", "여성")
+                                                                     .replace("{title}", femaleHumanType.title)
+                                                                     .replace("{celebrities}", femaleHumanType.female));
+
+                                                                 
+
+        return  explainFormat.replace("{description}", bodyDescriptions);    
     }
 
     this.createPointBar = (matchingResult) => {
