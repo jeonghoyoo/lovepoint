@@ -10,4 +10,4 @@
 - git commit -m "message" : 변경 내용을 commit 한다. /w message
 - git push -u origin [main <- branchName>] : 원하는 branch에 Push
 
-### kakao adfir 3EA 연동
+### kakao adfit 3EA 연동
