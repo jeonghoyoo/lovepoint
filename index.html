@@ -41,6 +41,9 @@
     <meta property="og:image" content="https://mail.naver.com/read/image/original/?mimeSN=1607188648.729319.28701.14080&offset=5064&size=349618&u=skyhot43&cid=ii_kibylmub0&contentType=image/png&filename=%EA%B6%81%ED%95%A9.png&org=1" />
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 	<link rel="icon" href="/favicon.ico" type="image/x-icon">
+	<link href="https://fonts.googleapis.com/css2?family=Gugi&display=swap" rel="stylesheet">
+
+	<script src="https://kit.fontawesome.com/e6cedba626.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -68,9 +71,9 @@
 		<div class="male-image-upload-wrap">
 			<input id="maleImageInput" class="file-upload-input event-bind-elements" type="file" accept="image/*" />
 			<div class="drag-text">
-				<img src="img/image_upload.png" class="pt-5 upload" />
+				<i class="fas fa-camera-retro pt-5 upload-camera-font-size male-font-color"></i>
 				<h3 class="mb-5 pb-5 pt-4 upload-text">
-					남(男) 클릭!!
+					남(<i class="fas fa-male" style="font-size:2rem;color: #0c4ca0"></i>) 클릭!!
 				</h3>
 			</div>
 		</div>
@@ -81,7 +84,9 @@
 		<div class="mb-2 mt-2 run-button-area">
 			<div class="run-button text-center">
 				<button type="button p-2" class="run-love-btn event-bind-elements" id="btnRunLovePoint">
-					<span class="run-love-text">궁합보기</span>
+					<span class="run-love-text">
+						<i class="fas fa-play">&nbsp;&nbsp;결과보기</i>
+						</span>
 				</button>
 			</div>
 		</div>
@@ -89,9 +94,9 @@
 		<div class="female-image-upload-wrap">
 			<input id="femaleImageInput" class="file-upload-input event-bind-elements" type="file" accept="image/*" />
 			<div class="drag-text">
-				<img src="img/image_upload.png" class="mt-5 pt-5 upload" />
+				<i class="fas fa-camera-retro mt-5 pt-5 upload-camera-font-size female-font-color"></i>
 				<h3 class="mb-5 pb-5 pt-4 upload-text">
-					여(女) 클릭!!
+					여(<i class="fas fa-female" style="font-size:2rem;color: #ff69aa"></i>) 클릭!!
 				</h3>
 			</div>
 		</div>
@@ -104,16 +109,17 @@
 			<div id="label-container" class="d-flex flex-column justify-content-around mb-2"></div>
 		</div>
 	</div>
-	<div class="file-upload-content mt-5 mb-5 result-shot-display-element" data-html2canvas-ignore="true">
+	<div class="file-upload-content mb-5 result-shot-display-element" data-html2canvas-ignore="true">
 		<a id="kakao-link-btn" href="javascript:resultShot()">
-			<img src="https://developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png"/>
+			<img src="https://developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png"
+			style="width:50px;height:50px"/>
 		</a>
 		<button type="button p-2" class="try-again-btn event-bind-elements" style="vertical-align: middle;margin-left: 1%;" id="initImageUploadArea" onclick="window.location.reload();">
-			<span class="try-again-text">다시 하기</span>
+			<i class="fas fa-reply-all" style="font-size:3.5rem;color:#ffffff"> 다시하기</i>
 		</button>
-		<div class="kakao-share-explanation">
-			* 카카오톡으로 이미지를 전송하시면, 카카오CDN에 저장되어 최대 20일 후 삭제됩니다.<br/>
-			(원치 않으시면, 핸드폰 캡쳐 기능을 이용하여 공유하세요.)
+		<br/>
+		<div class="kakao-share-explanation mt-3">
+			* 카카오톡으로 이미지를 전송하시면, 카카오CDN에 저장되어 최대 20일 후 삭제됩니다.(원치 않으시면, 핸드폰 캡쳐 기능을 이용하여 공유하세요.)
 		</div>
 	</div>
 	<div class="ad-banner">
