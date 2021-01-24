@@ -1,15 +1,15 @@
 body {
-  font-family: 'Jua', sans-serif;
-  background-color: #ffffff;
-  box-sizing: border-box;
-  color: #35465d;
+  background: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  font-family: 'Gugi', cursive;
 }
 .file-upload {
     padding: 2% 3% 5%;
     margin: 0 auto;
     border-radius: 10px;
-    border: solid 1.5px #f6f7fa;
-    background-color: #f6f7fa;
 }
 .file-upload-btn {
   width: 100%;
@@ -150,7 +150,7 @@ body {
 }
 
 .run-love-btn {
-  border-radius: 40px;
+  border-radius: 10px;
   border: solid 1.5px #FF0000;
   background-color: #FF0000;
 }
@@ -233,8 +233,15 @@ body {
     height: 27.262px;
 }
 
-.upload {
-    width: 20%;
+.upload-camera-font-size {
+    font-size: 5rem;
+}
+.male-font-color {
+  color: #0c4ca0
+}
+
+.female-font-color {
+  color: #ff69aa
 }
 
 .upload-text {
@@ -347,6 +354,7 @@ body {
 .humanType-explanation {
     font-size: 1.5rem;
     text-align: left;
+    font-weight: bold;
 }
 .male1-title {
     color: #3ba363;
@@ -355,7 +363,7 @@ body {
 .male1-celeb {
     color: #3ba363;
     font-size: 1.3em;
-    text-align:center;
+    text-align:left;
 }
 .male2-title {
     color: #3ba363;
@@ -364,7 +372,7 @@ body {
 .male2-celeb {
     color: #3ba363;
     font-size: 1.3em;
-    text-align:center;
+    text-align:left;
 }
 .male3-title {
   color: #548dd4;
@@ -373,7 +381,7 @@ body {
 .male3-celeb {
   color: #548dd4;
   font-size: 1.3em;
-  text-align:center;
+  text-align:left;
 }
 .male4-title {
   color: #9b6b43;
@@ -382,7 +390,7 @@ body {
 .male4-celeb {
   color: #9b6b43;
   font-size: 1.3em;
-  text-align:center;
+  text-align:left;
 }
 
 .female1-title {
@@ -392,7 +400,7 @@ body {
 .female1-celeb {
     color: #ff6c0a;
     font-size: 1.3em;
-    text-align:center;
+    text-align:left;
 }
 .female2-title {
     color: #e56995;
@@ -401,7 +409,7 @@ body {
 .female2-celeb {
     color: #e56995;
     font-size: 1.3em;
-    text-align:center;
+    text-align:left;
 }
 .female3-title {
     color: #31849b;
@@ -410,7 +418,7 @@ body {
 .female3-celeb {
     color: #31849b;
     font-size: 1.3em;
-    text-align:center;
+    text-align:left;
 }
 .female4-title {
   color: #52349b;
@@ -419,7 +427,7 @@ body {
 .female4-celeb {
   color: #52349b;
   font-size: 1.3em;
-  text-align:center;
+  text-align:left;
 }
 
 label {
@@ -514,4 +522,5 @@ display: none;
 
 .kakao-share-explanation {
   font-size: 1.5rem;
+  text-align: left;
 }

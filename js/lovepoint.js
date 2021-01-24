@@ -53,7 +53,6 @@ var LovePoint = function (drawUi, matching) {
 
     this.readUrl = function(input, genderType) {
         if (input.files && input.files[0]) {
-            drawUi.showLoadingBar();
             var reader = new FileReader();
             reader.onload = function (element) {
                 if (GENDER_TYPE.F === genderType) {

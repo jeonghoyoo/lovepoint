@@ -66,28 +66,25 @@ var DrawUI = function () {
         }
 
         let titleFormat = "<div class=\"{humanTypeStyle}-title\">{title}</div>";
-        let resultTitle = "남성 : {maleType} / 여성 : {femaleType}";        
 
         let explainFormat = "<div class=\"humanType-explanation pt-2\">{description}</div>";
 
-        let femaleCelebrityFormat = "<div class=\"{humanTypeStyle}-celeb mt-2 text-align: left\">{genderCode} {title} 연예인: {celebrities}</div>";
-        let maleCelebrityFormat = "<div class=\"{humanTypeStyle}-celeb mb-2 text-align: left\">{genderCode} {title} 연예인: {celebrities}</div>";
+        let femaleCelebrityFormat = "<div class=\"{humanTypeStyle}-celeb mt-2 text-align: left\">{title} 연예인: {celebrities}</div>";
+        let maleCelebrityFormat = "<div class=\"{humanTypeStyle}-celeb mb-2 text-align: left\">{title} 연예인: {celebrities}</div>";
 
-        let maleResultTitle = "남성 : {maleType}";
+        let maleResultTitle = "<i class=\"fas fa-male\" style=\"font-size:2rem\"></i> : {maleType}";
         $('.male-file-upload-content').append(titleFormat.replace("{humanTypeStyle}", "male" + maleHumanType.no)
                                                          .replace("{title}", maleResultTitle.replace("{maleType}", maleHumanType.title)));
                          
         $('.male-file-upload-content').append(maleCelebrityFormat.replace("{humanTypeStyle}", "male" + maleHumanType.no)
-                                                                 .replace("{genderCode}", "남성")
                                                                  .replace("{title}", maleHumanType.title)
                                                                  .replace("{celebrities}", maleHumanType.male));
 
-        let femaleResultTitle = "여성 : {femaleType}";
+        let femaleResultTitle = "<i class=\"fas fa-female\" style=\"font-size:2rem\"></i> : {femaleType}";
         $('.female-file-upload-content').append(titleFormat.replace("{humanTypeStyle}", "female" + femaleHumanType.no)
                                                          .replace("{title}", femaleResultTitle.replace("{femaleType}", femaleHumanType.title)));
                          
         $('.female-file-upload-content').append(femaleCelebrityFormat.replace("{humanTypeStyle}", "female" + femaleHumanType.no)
-                                                                     .replace("{genderCode}", "여성")
                                                                      .replace("{title}", femaleHumanType.title)
                                                                      .replace("{celebrities}", femaleHumanType.female));
 
@@ -108,7 +105,7 @@ var DrawUI = function () {
                                    "     </div>" +
                                    "</div>"
 
-        return rankPredictionFormat.replace("{humanType}", "🖤 사랑점수 🖤")
+        return rankPredictionFormat.replace("{humanType}", "<i class=\"fas fa-kiss-beam\"></i> 궁합 점수 <i class=\"far fa-kiss-beam\"></i>")
                                    .replace("{dynamicWidth}", matchingResult.result.point + "%")
                                    .replaceAll("{engTitle}", femaleHumanType.eng)
                                    .replace("{barWidth}", matchingResult.result.point + "점");
